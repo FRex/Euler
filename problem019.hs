@@ -9,7 +9,8 @@ nextWeekday Friday = Saturday
 nextWeekday Saturday = Sunday
 nextWeekday Sunday = Monday
 
-lastDayOfYear (d, m, y) = m == 12 && d == 31
+lastDayOfYear (31, 12, _) = True
+lastDayOfYear _ = False
 
 isLeapYear y = (y `mod` 4 == 0) && (y `mod` 100 /= 0 || y `mod` 400 == 0)
 
