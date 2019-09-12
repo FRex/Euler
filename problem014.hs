@@ -10,5 +10,4 @@ biggerTuple2 a b = if snd a > snd b then a else b
 maximum2 (x:[]) = x
 maximum2 (x:xs) = biggerTuple2 x $ maximum2 xs
 
-main = do
-    print $ fst $ maximum2 nums
+main = print $ fst $ maximum2 nums

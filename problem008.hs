@@ -10,5 +10,4 @@ prod n (x:xs) = (digitToInt x) * (prod (n - 1) xs)
 
 nums = map (prod 13) strs
 
-main = do
-    print $ maximum nums
+main = print $ maximum nums

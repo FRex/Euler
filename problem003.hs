@@ -8,6 +8,5 @@ divisors n = d:(divisors $ n `div` d)
         dividesby a b = a `mod` b == 0
         surefind a b = case find a b of Just n -> n
 
-main = do
-    let n = 600851475143
-    print $ maximum $ divisors n
+n = 600851475143
+main = print $ maximum $ divisors n

@@ -39,5 +39,4 @@ vertical = [productInGrid p (0, 1) 4 | p <- coords]
 diagonal = [productInGrid p (1, 1) 4 | p <- coords]
 diagona2 = [productInGrid p (1, -1) 4 | p <- coords]
 
-main = do
-    print $ maximum $ horizont ++ vertical ++ diagonal ++ diagona2
+main = print $ maximum $ horizont ++ vertical ++ diagonal ++ diagona2

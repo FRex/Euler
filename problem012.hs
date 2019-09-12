@@ -23,5 +23,4 @@ trd3 (a, b, c) = c
 y = filter (\a -> fst3 a > 490) $ x
 z = filter (\a -> trd3 a > 500) $ y
 
-main = do
-    print $ snd3 $ head z
+main = print $ snd3 $ head z

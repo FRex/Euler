@@ -4,5 +4,4 @@ primes = 2 : [x | x <- [3..], isprime x]
         isprime x = all (\p -> x `mod` p > 0) $ totry x
         totry x = takeWhile (\p -> p * p <= x) primes
 
-main = do
-    print $ sum $ takeWhile (< 2000000) primes
+main = print $ sum $ takeWhile (< 2000000) primes

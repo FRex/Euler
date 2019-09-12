@@ -49,6 +49,4 @@ mylen :: String -> Integer
 mylen "" = 0
 mylen (a:as) = (if (a == ' ') || (a == '-') then 0 else 1) + mylen as
 
-main = do
-    let nums = map mylen $ map numberName $ take 1000 [1..1000]
-    print $ sum nums
+main = print $ sum $ map mylen $ map numberName $ take 1000 [1..1000]
